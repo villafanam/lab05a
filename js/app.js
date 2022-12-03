@@ -95,8 +95,8 @@ function sumArray(sumArr) { //eslint-disable-line
 
   someArray.push(mySum);
   someArray.push(sumStr);
+
   return someArray;
-  //console.log(testArray.join());
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -117,11 +117,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let product = 1;
+  let productStr;
+  let someArray= [];
 
+  for(let i = 0; i < multArr.length; i++)
+  {
+    product = multiply(product, multArr[i])[0];
+  }
+
+  productStr = 'The numbers ' + multArr.join() + ` have a product of ${product}.`;
+
+  someArray.push(product);
+  someArray.push(productStr);
+  
+  return someArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
