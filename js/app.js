@@ -86,12 +86,12 @@ function sumArray(sumArr) { //eslint-disable-line
   let sumStr;
   let someArray= [];
 
-  for(let i = 0; i < testArray.length; i++)
+  for(let i = 0; i < sumArr.length; i++)
   {
-    mySum = sum(mySum, testArray[i])[0];
+    mySum = sum(mySum, sumArr[i])[0];
   }
 
-  sumStr = testArray.join() + ` was passed in as an array of numbers, and ${mySum} is their sum.`;
+  sumStr = sumArr.join() + ` was passed in as an array of numbers, and ${mySum} is their sum.`;
 
   someArray.push(mySum);
   someArray.push(sumStr);
