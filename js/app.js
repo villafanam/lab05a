@@ -97,6 +97,7 @@ function sumArray(sumArr) { //eslint-disable-line
   someArray.push(sumStr);
 
   return someArray;
+  //return [mySum, sumStr];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
